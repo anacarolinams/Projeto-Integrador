@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/formCadastro.css">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <header>
+        <h2 class="logo">PVCM</h2>
+        <nav class="navegacao">
+            <a href="#">Relatórios</a>
+            <a href="#">Cadastro</a>
+            <a href="#">Login</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="fullname">Nome completo</label>
+                        <input id="fullname" type="text" name="fullname" placeholder="Digite seu nome completo" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cpf">CPF</label>
+                        <input id="cpf" type="text" name="cpf" placeholder="Digite seu CPF" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="birthdate">Data de Nascimento</label>
+                        <input id="birthdate" type="date" name="birthdate" placeholder="Digite sua data de nascimento" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="text" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="fonenumber">Telefone</label>
+                        <input id="fonenumber" type="tel" name="fonenumber" placeholder="(xx) xxxxx-xxxx" required>
+                    </div>
+
+                    <div class="input-box-select">
+                        <label for="type-input" id="type-input" class="form-label">Tipo de Usuário</label>
+                        <select id="type-input" class="form-select">
+                            <option selected>Selecione</option>
+                            <option >Estagiário</option>
+                            <option >Promotor</option>
+                            <option >Servidor</option>                        
+                        </select>                
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="confirmpassword">Confirmação de Senha</label>
+                        <input id="confirmpassword" type="password" name="confirmpassword" placeholder="Confirme sua senha" required>
+                    </div>
+
+                </div>
+            
+                <div class="continue-button">
+                    <button><a href="#">Continuar</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

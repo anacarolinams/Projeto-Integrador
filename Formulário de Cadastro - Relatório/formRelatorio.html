@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/formRelatorio.css">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <header>
+        <h2 class="logo">PVCM</h2>
+        <nav class="navegacao">
+            <a href="#">Relatórios</a>
+            <a href="#">Cadastro</a>
+            <a href="#">Login</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastro de Processos</h1>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="processnumber">Número do Processo</label>
+                        <input id="processnumber" type="text" name="processnumber" placeholder="Digite o número do processo" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="processdate">Data</label>
+                        <input id="processdate" type="date" name="processdate" placeholder="xx/xx/xxxx" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="processparts">Partes do Processo</label>
+                        <input id="processparts" type="text" name="processparts" placeholder="Digite o nome das partes" required>
+                    </div>
+
+                    <div class="input-box-select">
+                        <label for="type-input" id="type-input" class="form-label">Tipos de Pena/Código</label>
+                        <select id="type-input" class="form-select">
+                            <option selected>Selecione</option>
+                            <option>Acompanhamento Psicológico ou Terapêutico</option>
+                            <option>Medidas Protetivas</option>
+                            <option>Penalidades Financeiras/Multas</option> 
+                            <option>Prestação de Serviços à Comunidade</option>
+                            <option>Prisão</option>                       
+                        </select>                
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lawyer">Advogados</label>
+                        <input id="lawyer" type="text" name="lawyer" placeholder="Nome do advogado responsável" required>
+                    </div>
+
+                    <div class="input-box-select">
+                        <label for="type-input" id="type-input" class="form-label">Temas</label>
+                        <select id="type-input" class="form-select">
+                            <option selected>Selecione</option>
+                            <option>Violência Física</option>
+                            <option>Violência Moral</option>
+                            <option>Violência Psicológica</option>  
+                            <option>Violência Sexual</option> 
+                            <option>Violência Patrimonial</option>                       
+                        </select>                
+                    </div>
+
+                    <div class="input-box">
+                        <label for="description">Descrição</label>
+                        <input id="description" type="text" name="description" placeholder="Insira descrição breve do caso" required>
+                    </div>
+
+                    <div class="input-box-select">
+                        <label for="type-input" id="type-input" class="form-label">Status do Processo</label>
+                        <select id="type-input" class="form-select">
+                            <option selected>Selecione</option>
+                            <option>Ativo/Running</option>
+                            <option>Pausado/Suspenso</option>
+                            <option>Concluído/Terminado</option> 
+                            <option>Cancelado/Abortado</option> 
+                            <option>Pendente</option> 
+                            <option>Em espera/Esperando</option>  
+                            <option>Erro/Falha</option>                       
+                        </select>                
+                    </div>
+                </div>
+
+                <div class="file-button">
+                    <label for="file">Escolha os arquivos para upload</label>
+                    <input type="file" id="file" name="file" multiple/>
+                </div>
+            
+                <div class="page-button">
+                    <button><a href="#">Cadastrar</a></button>
+                </div>
+
+                <div class="page-button">
+                    <button><a href="#">Cancelar</a></button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>

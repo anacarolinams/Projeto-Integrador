@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Nunito', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F2F2F2;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo{
+    font-size: 2em;
+    color: #215FAB;
+    user-select: none;
+}
+
+.navegacao a {
+    position: relative;
+    font-size: 1.1em;
+    color: #244081;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.navegacao a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #215FAB;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navegacao a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+
+}
+
+.container {
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.212);
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFF;
+    padding: 3rem;
+}
+
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #215FAB;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+    box-sizing: border-box;
+    margin: 0 2rem 1.1rem 2rem;
+    width: 40%;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001C;
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #215FAB;
+}
+
+.input-box label,
+.type-title h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000C0;
+}
+
+.input-box input::placeholder {
+    color: #000000BE;
+}
+
+.type-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0.5rem;
+}
+
+.type-input {
+    display: flex;
+    align-items: center;
+}
+
+.type-input input {
+    margin-right: 0.35rem;
+}
+
+.type-input label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000C0;
+}
+
+.form-select {
+    margin: 0.6rem 0px;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.11) 1px 1px 6px;
+}
+
+.input-box-select {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+    box-sizing: border-box;
+    margin: 0 2rem 1.1rem 2rem;
+    width: 40%;
+}
+
+.input-box-select label,
+.type-title h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000C0;
+}
+
+.file-button {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000C0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.file-button input{
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000C0;
+}
+
+input::file-selector-button {
+    font-weight: 600;
+    color: #000000C0;
+    padding: 0.75em;
+    border: thin solid #215FAB;
+    border-radius: 3px;
+    margin: 0.5rem;
+  }
+
+.page-button button {
+    width: 100%;
+    margin-top: 0.5rem;
+    border: none;
+    background-color: #215FAB;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.page-button button:hover {
+    background-color: #487bb9;
+}
+
+.page-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #FFF;
+}
+
+@media screen and (max-width: 1330px) {
+    .container {
+        width: 70%;
+    }
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+    .input-group {
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 5rem;
+    }
+    .type-inputs {
+        margin-top: 2rem;
+    }
+    .type-group {
+        flex-direction: column;
+    }
+    .type-input {
+        margin-top: 0.5rem;
+    }
+}
